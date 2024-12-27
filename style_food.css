@@ -1,0 +1,1065 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+/* html{
+    scroll-behavior: smooth;
+    تروح عندهاnavbar  علشان لما تضغط علي اي حاجه في  
+} */
+body{
+    font-family: sans-serif;
+    background-color: #383848;
+}
+/* about */
+.container{
+  
+
+    max-width: 1100px;
+    margin: auto;
+}
+#navbar img{
+    border-radius: 10px;
+}
+/* many utility */
+
+.plimary-text{
+    color: #ffbc2b;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-secondary,.content a{
+ background-color: #383848;
+ color: #fff; 
+ margin: 32px;
+}
+.btn-primary{
+    border: 2px solid white;
+    color: #fff
+
+}
+
+.btn-primary:hover,.content a:hover{
+    background-color:yellow;
+    color:rgb(59, 53, 53);
+    font-weight: 600;
+}
+
+.btn-secondary:hover{
+    background-color:yellow;
+    color:rgb(59, 53, 53);
+
+}
+
+/* header start */
+header{
+    height: 100vh;
+    background:url(picture.png/صور-سفر-و-عزايم.jpg) center center /cover no-repeat ;
+    position: relative;
+
+
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: aqua;
+}
+ul{
+    list-style-type: none; 
+    /* remove bold */
+}
+#navbar img{
+    margin-top: 10px;
+    width: 100px;
+    margin-left: 100px;
+    /* style logo */
+}
+#navbar ul{
+    display: flex;
+margin-right: 100px;
+}
+#navbar ul li a{
+    padding: 15px 20px ;
+    font-weight: 600;
+    
+}
+#navbar ul li a:hover{
+    border-bottom: 2px solid #e4b95b;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 75%;
+}
+ .content h1{
+    font-size: 40px ;
+    color: white;
+}
+.content p{
+    margin:20px 0 40px;
+    color: white;
+
+}
+header::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+   background:  rgb(1,0,0,0.6);
+}
+header * {
+    z-index: 5;
+} 
+/* header end
+/* about start */
+#about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+   
+   
+}
+/* title in about titel in offers */
+ .title,.title_offers,
+ #menu .title-menu
+ 
+{
+    text-align: center;
+    margin-bottom: 64px;
+}
+.title h2,.title_offers h2,#menu h2{
+    font-size: 40px;
+    color:yellow;
+    margin-bottom: 20px ;
+
+    
+
+}
+#menu h2,
+.title h2{
+    color:#383848;
+
+}
+
+.title p,
+#menu .title-menu p{
+    font-size: 14px;
+    color:#9a9a9a;
+    font-weight: 600;
+}
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+.about-content img{
+    width: 450px;
+    background-color: aqua;
+   border-radius: 10px;
+
+  
+   
+}
+
+
+.about-content p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 600;
+    line-height:1.6;
+    /* margin-bottom: 2rem; */
+}
+
+    
+#video{  
+    margin: 0 0;
+}
+ 
+.video-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #000; */
+  }
+  
+  .video-container video {
+  
+    width: 70%;
+    height: 70vh;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    object-fit: cover    /*  علشان الفيديو ياخد العرض كله */
+ 
+  }
+
+/*               end about               */
+
+
+/* offer start */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+#main-header ,#menu .title-menu{
+    background-image: none;
+    background-color: #030f57; /* خلفية الهيدر لونها أزرق غامق */
+    color: #fff; /* لون النص في الهيدر أبيض */
+    text-align: center; /* بنخلي النصوص في الهيدر في المنتصف */
+    padding: 50px 0; /* بنحط مسافة فوق وتحت في الهيدر */
+    margin-bottom: 30px; /*بنحط مسافة تحت الهيدر عشان ما يكونش ملاصق للعروض*/
+  
+}
+
+#main-header h1,#menu .title-menu h2 {
+    font-size: 50px; /* حجم الخط بتاع العنوان كبير */
+    color: #f1c500; /* اللون بتاع العنوان ده ذهبي */
+    font-weight: 700; /* بنخلي العنوان ثقيل (Bold) */
+    margin-bottom: 0; /* بنحط مسافة تحت العنوان */
+}
+
+#main-header p,#menu .title-menu p {
+    font-size: 18px; /* حجم الخط هنا أصغر شوية */
+    font-weight: 500; /* وزن الخط متوسط */
+    color: #fff; /* النصوص هنا لونها أبيض */
+    margin-top: 10px; /* بنحط مسافة فوق الوصف */
+}
+
+#offers  {
+    background: url('picture.png/offer-background.jpg') center/cover fixed; /* بنحط صورة خلفية للعروض */
+    background-color: rgba(0, 0, 0, 0.3); /* بنخلي الخلفية فيها شفافية عشان الصورة تبين */
+    padding: 40px 0; /* بنحط مسافة فوق وتحت في قسم العروض */
+    text-align: center; /* بنخلي النصوص في العروض في المنتصف */
+    color: #fff; /* النصوص لونها أبيض */
+    display: flex; /* بنستخدم الفلكس لتوزيع العناصر داخل القسم */
+    flex-wrap: wrap; /* بنخلي العناصر تتوزع على أكتر من صف لو مش كفاية مكان */
+    justify-content: space-between; /* بنخلي العناصر متوزعة بالتساوي */
+    gap: 20px; /* بنحط مسافة بين العناصر */
+    padding: 20px 20px;
+  
+}
+
+.offers_items {
+    display: flex; /* بنخلي العروض تتحط جنب بعض */
+    flex-direction: column; /* بنخلي العروض تتعرض بشكل عمودي */
+    justify-content: center; /* بنحط العروض في المنتصف عموديًا */
+    align-items: center; /* بنحط العروض في المنتصف أفقيًا */
+    width: 30%; /* بنخلي العرض ياخد 30% من العرض الكلي */
+    text-align: center; /* النصوص جوه العرض بتكون في المنتصف */
+    background-color: rgba(38, 50, 56, 0.8); /* خلفية العروض لونها غامق مع شفافية */
+    padding: 15px; /* بنحط مسافة جوه العرض */
+    border-radius: 10px; /* بنخلي حواف العرض مدورة */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* بنضيف ظل خفيف للعروض عشان يظهر بشكل حلو */
+    transition: transform 0.3s ease; /* بنخلي العرض يتحرك بشكل سلس لما ييجي عليه الماوس */
+    min-width: 250px; /* بنحدد أقل عرض للعرض عشان ما يبقاش صغير جدًا */
+}
+
+.offers_items:hover {
+    transform: translateY(-10px); /* لما الماوس ييجي على العرض، يتحرك لفوق شوية */
+    background-color: rgba(38, 50, 56, 0.9); /* بنخلي لون الخلفية أغمق شوية لما نكون على العرض */
+}
+
+.offer_image img {
+    width: 100%; /* بنخلي الصورة تاخد عرض العرض بالكامل */
+    height: 200px; /* بنخلي الصورة طولها 200px */
+    object-fit: cover; /* بنخلي الصورة تتكيف مع المساحة المتاحة ليها بدون تشويه */
+    border-radius: 10px; /* بنخلي الصورة مدورة الأطراف */
+}
+
+.offer_details {
+    text-align: center; /* بنخلي النصوص في التفاصيل في المنتصف */
+    padding-top: 10px; /* بنحط مسافة فوق التفاصيل عشان تبقى مرتبة */
+}
+
+.offer_details h3 {
+    font-size: 24px; /* حجم الخط في عنوان التفاصيل كبير شوية */
+    color: #ff9f00; /* اللون ده ذهبي علشان يلفت الانتباه */
+}
+
+.offer_details p {
+    margin: 8px 0; /* بنحط مسافة فوق وتحت النصوص */
+    color: #fff; /* لون النصوص أبيض */
+}
+
+.offer_details del {
+    color: #bbb; /* بنخلي السعر القديم لونه رمادي */
+    text-decoration: line-through; /* بنشطب على السعر القديم */
+}
+
+.offer_details .primary.text {
+    color: #d32f2f; /* اللون ده أحمر علشان السعر الجديد يبقى واضح */
+}
+
+@media (max-width: 1024px) {
+    /* لما الشاشة تبقى أقل من 1024px، بنعدل توزيع العروض عشان تكون متناسقة مع الشاشات الصغيرة */
+    #offers {
+        flex-direction: row; /* بنخلي العروض تتوزع في صف واحد */
+        justify-content: center; /* بنخلي العروض تتوسط */
+    }
+
+    .offers_items {
+        width: 45%; /* بنخلي العرض ياخد 45% من العرض الكلي بدل 30% */
+        margin-bottom: 20px; /* بنحط مسافة تحت العرض */
+    }
+
+    .offer_image img {
+        height: 150px; /* بنقلل حجم الصورة شوية على الشاشات الصغيرة */
+    }
+}
+/* offer end */
+
+/* MENU start */
+#menu{
+    background: #5a4d4d;
+    /* background: url('offer-background.jpg') center/cover fixed; بنحط صورة خلفية للعروض */
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5rem 0;
+    color: white;
+}
+
+#menu .menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#menu .menu-items .menu-item{
+    display: flex;
+    /* علشان الصور و النص يكونوا جنب بعض في عمودين */
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+
+}
+#menu .menu-items .menu-item img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right:20px ;
+}
+#menu .menu-items .menu-item h3{
+    color: #126f86;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom:10px ;
+    position: relative;
+    margin-bottom:10px ;
+}
+#menu .menu-items .menu-item span{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+
+#menu .btn{
+    display: block;
+    margin: 20px auto 0;
+    background: rgb(255, 255, 7);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+    font-variant: small-caps;
+
+
+}
+#menu .btn:hover{
+    background:aqua;
+}
+/* MENU end */
+
+
+/*Start Our Team */
+
+
+
+
+/* header {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px;
+    text-align: center;
+} */
+
+.staff-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.staff-member {
+    background-color: rgb(41, 39, 39);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+}
+
+.staff-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.staff-member h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+
+.staff-member p {
+    font-size: 1em;
+  color:#777;
+}
+#our-team .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+   
+}
+#our-team .employee {
+    background-color: whitesmoke;
+    border: 1px solid #111010;
+    border-radius: 8px;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(144, 132, 132, 0.1);
+    margin: 10px;
+}
+#our-team .employee img {
+    width: 100%;
+    border-radius: 50%;
+}
+#our-team .employee h3 {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #301c9f;
+}
+#our-team .employee p {
+    font-size: 0.9em;
+    color: #161615;
+}
+#our-team h1{
+    text-align: center;
+    font-size: 50px;
+    color: #777;
+    margin-bottom: 0%;
+
+}
+#our-team {
+    margin-top: 40px;
+}
+#our-team h1{
+    background: #030f57;
+    
+    padding: 30px;
+    color:#f1c500 ;
+}
+#our-team .container{
+    margin-top: 15px;
+}
+#our-team {
+    background: #272733;
+}
+
+
+
+/*End Our Team */
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+/* start gallery */
+#gallery {
+    background: url('picture.png/offer-background.jpg') center center/cover no-repeat;
+    padding: 6rem 0  6rem;
+    margin-top: 40px;
+}
+
+#gallery h2 {
+  
+    color:#f1c500;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: -50px;
+    background-color: #030f57;
+    padding: 20px 0;
+}
+
+#gallery .img-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#gallery .img-gallery img {
+    width: 160px;
+    height: 150px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+
+#gallery .img-gallery img:hover {
+    opacity: 1;
+}
+
+/* End gallery */
+
+
+
+/* start الحجز */
+#reservation {
+    width: 90%;
+    font-size: 16px;
+    margin: 20px auto;
+    color: #333;
+  }
+  
+  #reservation h4 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #444;
+    background: #241288;
+    color: #dfa21e;
+    padding: 5px 0;
+
+  }
+  
+  #reservation nav {
+    width: 80%;
+    margin: 20px auto;
+    border: 2px solid #aaa;
+    padding: 15px;
+    font-size: 18px;
+    background-color: wheat;
+    color: #333;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  #reservation input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 90%;
+    border-radius: 5px;
+  }
+  
+  #reservation button {
+    background-color: #666;
+    width: 150px;
+    padding: 8px;
+    border: 2px solid #444;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #reservation button:hover {
+    /* background-color: #555;
+    width: 200px;
+    padding: 10px ;
+    border: 2px solid;
+    margin-top: 18px;
+    font-size: 30px; */
+    border: 1px solid white;
+    scale: 1.2;
+    background-color:#ef7000;
+  
+  }
+  
+  select {
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  /* end الحجز */
+
+/* Start contact */
+#contact {
+    background: #f4f2ed;
+    padding: 5rem 0;
+}
+
+#contact .container {
+    max-width: 900px;
+}
+
+#contact .contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact .contact-content .contact-info {
+    width: 70%;
+}
+
+#contact .contact-content .contact-info div {
+    margin: 30px;
+    line-height: 100%;
+
+}
+
+#contact .contact-content .contact-info h3 {
+  
+    font-size: 20px;
+    color: #383848;
+    margin-bottom: 8px;
+
+}
+
+#contact .contact-content .contact-info p {
+    color: #9a9a9a;
+    
+}
+
+#contact .contact-content .contact-info i {
+    color: rgb(245, 201, 6);
+    margin-right: 5px;
+}
+
+#contact .contact-content .contact-info a i {
+    color: #9a9a9a;
+    background-color: #383848;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#contact .contact-content .contact-info a i:hover {
+    background: #f1d313;
+    color: #383848;
+}
+
+#form-contact{
+    width: 50%;
+}
+
+#form-contact input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 20px 0px;
+    margin: 10px 0px;
+    border: none;
+    background-color: #e3e2dd;
+
+
+}
+
+#contact .btn {
+    background: hsl(0, 0%, 50%);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#contact .btn:hover {
+    background-color: #ffe30c;
+    color: grey ;
+     
+}
+
+/* End contact */
+
+/* Start Event */
+
+/* Styling for the Events Section with Dark Theme */
+#events {
+    padding: 50px 0;
+    background-color: #1a1a1a; /* خلفية داكنة */
+    color: #ffffff; /* نصوص بلون أبيض */
+}
+
+#events .title {
+  
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f2a365; /* لون نص زاهي */
+}
+
+#events .events-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.event-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #2c2c2c; /* لون الخلفية الداكنة للأحداث */
+    border: 1px solid #444; /* إطار خفيف */
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* ظل خفيف */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-item:hover {
+    transform: scale(1.05); /* تكبير عند التحريك */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+}
+
+.event-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+   
+}
+#events .tityle .h2{
+    font-size: 30px;
+}
+
+.event-item div {
+    padding: 20px;
+    text-align: center;
+}
+
+.event-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ef7000; /* لون العناوين */
+}
+
+.event-item p {
+    margin-bottom: 10px;
+    color: #dddddd; /* لون النص */
+}
+
+.event-item .btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #f2a365; /* لون زاهي للأزرار */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event-item .btn:hover {
+    background-color: #eb7900; /* تغيير لون الزر عند التحريك */
+}
+#events .title {
+    background-color: #030f57;
+    padding: 20px 0;
+}
+#events .title h2{
+    color:#eb7900 ;
+}
+/* End Event */
+
+
+
+
+
+
+
+
+
+
+
+/* start login */
+#login{
+  width: 100vw;
+  height: 100vh;
+  margin: 10px;
+  padding-top: 60px;
+    background:url(picture.png/7.jpg)center center/cover  no-repeat fixed;
+    background-size: cover;
+}
+#login .log-in{
+    width: 50vw;
+    height: 80vh;
+    font-weight: 600;
+    
+     margin:30px auto;
+    
+    color: #ffbc2b;
+
+   box-sizing: border-box;
+ 
+   
+   
+  border-radius: 5px;
+    background: rgb(0,0,0,0.7);
+    border-width: 10px;
+ 
+  
+}
+#login .log-in form h1{
+    float:right;
+    /* text-align: center; */
+    font-weight: 800;
+    padding: 10px 8px;
+  
+
+
+}
+#login .log-in form label{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 0 5px;
+   
+
+}
+
+
+.log-in form input,.log-in form button{
+     border: none; 
+     
+    outline: none;
+    height: 40px;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    width: 50vw;
+    font-weight: 600;
+   
+  
+    
+    
+}
+.log-in form input{
+    padding:0 5px;
+
+}
+
+
+.log-in form button{
+   
+ 
+display: inline-block;
+width: 20%;
+border-radius: 16px;   
+ background:rgb(8, 8, 255);
+
+ outline: none;
+ 
+ font-size: 18px;
+ letter-spacing: 2px;
+ text-align: center;
+  margin:0 20vw;
+
+    cursor: pointer;
+    margin-top:15px; 
+    /* transform: 4s ; */
+  
+}
+.log-in form button:hover{
+    /* transform: scale(1.1); */
+    background: rgb(0, 255, 255);
+
+}
+.log-in form a{
+    color:white;
+    padding:0 5px;
+}
+.log-in form a:hover{
+    color: aqua;
+
+}
+
+
+.toast {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        font-size: 17px;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+
+
+
+
+ /*end login  */
+ /* footer start */
+ #footer{
+    
+    background: #27272e;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+    margin-top: 1rem;
+
+ }
+ #footer a{
+   
+    /* clear: both; */
+    color: #fff;
+ }
+ /* footer end */
+ 
+
+ 
+ /* Responsive */
+ /* medium scrieen +tablet */
+ @media(max-width:1000px){
+    #navbar img{
+        margin-left: 20px; /*لتقليل المسافه بتاعت اللوجو*/
+    }
+    #navbar ul{
+        margin-right: 20px;  /*navbarلتقليل المسافه بين عناصر */
+    }
+    #navbar ul li a{
+        padding: 10px;
+    }
+    .content h1{
+        font-size: 28px;
+        /*   homeفي h1لتقليل حجم  */
+    }
+    #about{
+        height: auto;
+        padding: 4rem 2rem;
+    }
+    #about .about-content p{
+      margin-right: 2rem;
+      /* pلتقليل المسافه بين الصور و  */
+    }
+    .about-content img{
+        width: 250px; 
+         /* aboutلتقليل حجم الصوره في صفحه    */
+    }
+    #menu .menu-items{
+        display: block;
+       /*  تحت بعضmenu علشان تخلي صور بتاعت  */
+
+    }
+    #contact .contact-content {
+
+     flex-direction: column;
+     /*  بتخلي شكل الصفحه علي شكل اعمدة*/
+
+    }
+    .video-container video {
+  
+        width: 85%;
+        height: 85vh;
+    }
+    .log-in form button{
+        width: 30%;
+    }
+    
+    
+ }
+ /* mobile devices */
+ @media(max-width:600px){
+    #navbar{
+        flex-direction:column ;
+         /*  بتخلي شكل navbar علي شكل اعمدة*/
+        
+    
+        }
+       .content .btn-plimary{
+           padding: 10px;
+            font-size: 15px;
+            /* style button home */
+          
+            
+
+        }
+        .video-container video {
+  
+            width: 90%;
+            height: 90vh;
+        }
+        #navbar img{
+            margin-bottom: 20px;
+        }
+        .content h1{
+            font-size: 18px;
+        }
+        .content p{
+            font-size: 13px;
+        }
+        #about .about-content {
+        
+            flex-direction: column;
+        }
+        .about-content img{
+            margin: auto;
+        }
+        #about .title h2{
+            font-size: 25px; 
+        }
+        #main-header h1,#menu .title-menu h2 {
+            font-size: 35px;
+        }
+        #main-header p,#menu .title-menu p{
+            font-size: 14px;
+        }
+
+        .log-in form button{
+            width: 40%;
+            margin-left:32% ;
+        }
+        .log-in form label{
+
+          
+            margin-top: 1px;
+        
+            
+        }
+        .log-in form h1 {
+          font-size: 23px;
+        }
+
+        .log-in form label{
+            font-size: 14px;
+
+        } 
+
+ 
+    }
